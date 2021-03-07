@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <div class="contenedor">
+        <img class="foto" src="images/Foto3.png" alt="">
+        <h4 class="nombre">Santiago Castro</h4>
+        <h4 class="lugar">Santiago de Cali</h4>
+    </div>
+
+    <div class="resultado">
+        <p>
+            <div style="color: aliceblue;" id="numcar"></div>
+            <div style="color: aliceblue;" id="filtro"></div>
+            <div style="color: aliceblue;" id="hipotenusa"></div>
+        </p>
+    </div>
+  
+    <script type="text/javascript" src="js/codigo.js"></script>
+
+    <script>
+        var caracter = contarCaracteres('el pastor de las ovejas','o');
+        document.getElementById("numcar").innerHTML = "Número de coincidencias: " + caracter;
+
+        var filtro = filter([5,10,7,22,0,41,36]);
+        document.getElementById("filtro").innerHTML = "Resultado arreglo: " + filtro;
+
+        var hp = hypotenuse(13, 5);
+        document.getElementById("hipotenusa").innerHTML = "La hipotenusa es: " + hp;
+    </script>
+</body>
+</html>

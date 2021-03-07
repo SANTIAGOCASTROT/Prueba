@@ -1,0 +1,43 @@
+body {
+    background-image: url(../images/ciudad.jpg);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.contenedor{
+    height: 800px;
+    position: relative;
+}
+
+.foto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: white 5px solid;
+    width: 120px;
+    height: 180px;
+}
+
+.nombre{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lugar{
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.resultado{
+    background-color: rgba(0, 0, 0, 0.479);
+    opacity: 0.5;
+    border: 1px solid cornflowerblue;
+    width: 400px;
+}
+
